@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#hasDeliveryAdress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#hasDeliveryAdress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#adress"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#rate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#offer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#offer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#FoodProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#adress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#adress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#open_hours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#open_hours"/>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#rate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#FoodProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Customer">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#FoodProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#FoodProduct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Customer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pasta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pasta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#FoodProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#FoodProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Premium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Premium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Customer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Andrea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Andrea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Beef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Beef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Burger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Chicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Chicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Burger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Elie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Elie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Premium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Faceboof -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Faceboof">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#MacBob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#MacBob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Margharita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Margharita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Noémie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Noémie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Premium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#O12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#O12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Paradis_du_Fruit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Paradis_du_Fruit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pesto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pesto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pasta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pierre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pierre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Reine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Reine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pizza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Vegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Vegetarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Pasta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Burger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#La_Goute_d&apos;Or -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#La_Goute_d&apos;Or">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#O&apos;vert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#O&apos;vert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Plaisirs_d&apos;Orient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Plaisirs_d&apos;Orient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Halal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#du_verre_dans_l&apos;assiette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#du_verre_dans_l&apos;assiette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/feriel/ontologies/2024/2/untitled-ontology-6#Veggie"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
